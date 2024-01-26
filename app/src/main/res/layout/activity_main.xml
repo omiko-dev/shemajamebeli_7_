@@ -7,14 +7,19 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start"
     tools:context=".MainActivity">
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_gravity="start"
-        android:background="@drawable/side_nav_bar_shape"
-        android:padding="16dp"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessLeaf" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nvBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:paddingVertical="50dp"
+        android:clipToPadding="false"
+        app:headerLayout="@layout/side_menu"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>
