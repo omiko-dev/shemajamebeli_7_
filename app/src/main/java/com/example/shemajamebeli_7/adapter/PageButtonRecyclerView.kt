@@ -3,7 +3,6 @@ package com.example.shemajamebeli_7.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.shemajamebeli_7.R
 import com.example.shemajamebeli_7.databinding.PageButtonBinding
 import com.example.shemajamebeli_7.model.PageButton
 

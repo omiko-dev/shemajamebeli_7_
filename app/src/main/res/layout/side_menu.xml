@@ -2,7 +2,6 @@
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_marginHorizontal="20dp"
     android:layout_height="wrap_content">
@@ -11,10 +10,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical">
+
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher"/>
+            android:src="@mipmap/ic_launcher"
+            tools:ignore="ImageContrastCheck" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -30,16 +31,18 @@
         android:gravity="center"
         android:layout_marginTop="25dp"
         android:layout_height="wrap_content">
+
         <RadioButton
             android:id="@+id/rbPersonal"
             android:layout_width="wrap_content"
-            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
             android:layout_weight="1"
+            android:background="@drawable/checked_radio_button"
             android:button="@color/transparent"
             android:text="@string/personal"
-            android:layout_marginEnd="5dp"
-            android:background="@drawable/checked_radio_button"
-            android:layout_height="wrap_content"/>
+            android:textAlignment="center"
+            tools:ignore="TextContrastCheck" />
         <RadioButton
             android:id="@+id/rbBusiness"
             android:layout_width="wrap_content"
@@ -86,10 +89,13 @@
         android:gravity="center_vertical"
         android:layout_marginTop="100dp"
         android:layout_height="wrap_content">
+
         <ImageView
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:src="@mipmap/ic_launcher"/>
+            android:contentDescription="TODO"
+            android:src="@mipmap/ic_launcher"
+            tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck" />
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="wrap_content"
@@ -102,20 +108,23 @@
                 android:maxLines="1"
                 android:ellipsize="end"
                 android:textSize="18sp"
-                android:text="omiko valishvili"/>
+                android:text="omiko valishvili"
+                tools:ignore="HardcodedText" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
                 android:ellipsize="end"
-                android:text="omikovalishvili@gmail.com"/>
+                android:text="omikovalishvili@gmail.com"
+                tools:ignore="HardcodedText" />
         </androidx.appcompat.widget.LinearLayoutCompat>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:layout_gravity="center"
-            android:src="@drawable/ic_more"/>
+            android:src="@drawable/ic_more"
+            android:importantForAccessibility="no" />
     </androidx.appcompat.widget.LinearLayoutCompat>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
