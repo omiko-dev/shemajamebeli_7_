@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">shemajamebeli_7</string>
+    <string name="fyneen">Fyneen</string>
+    <string name="personal">Personal</string>
+    <string name="business">Business</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="person">Person</string>
+    <string name="notification">Notification</string>
+    <string name="calendar">Calendar</string>
+    <string name="statistic">Statistic</string>
+    <string name="setting">Setting</string>
+    <string name="dark_mode">Dark Mode</string>
+</resources>
